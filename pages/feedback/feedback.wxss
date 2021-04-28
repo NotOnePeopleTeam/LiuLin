@@ -1,0 +1,28 @@
+/* pages/feedback/feedback.wxss */
+
+.section {
+  padding: 20rpx 30rpx;
+}
+textarea {
+  border: 2rpx solid rgba(246, 50, 53, 1);
+  padding: 19rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+.button{
+  margin:auto;
+  text-align: center;
+  margin-top: 200rpx;
+  color: #fff;
+  width: 684rpx;
+  height: 86rpx;
+  /* line-height: 86rpx; */
+  border-radius: 45rpx;
+  background-color:rgba(246, 50, 53, 1) ;
+}
+button{
+  width: 100%;
+}
+.Mtext {
+  border: 2rpx solid #FFA033;
+}

@@ -1,0 +1,26 @@
+<!--pages/nearby/nearby.wxml-->
+<navbar parameter='{{parameter}}'></navbar>
+<view class="page">
+  <view class="titleing">
+    <image src="http://liulin.gengyouplay.cn/uploads/attach/def/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200511172112.png"></image>
+  </view>
+  <view class="nearname">附近店铺 </view>
+  <view class="dianlist" wx:for="{{}}" wx:key="index">
+    <view class="list_left">
+      <image src="/images/address.png">{{item.pic}}</image>
+    </view>
+    <view class="list_right">
+      <view class="tit">陕西省西安市太白南路店{{item.name}}</view>
+      <view class="address">陕西省西安市雁塔区太白南路天地源悦熙源商铺 1.4km{{item.address}}</view>
+    </view>
+  </view>
+  <view class="dianlist">
+    <view class="list_left">
+      <image src="/images/address.png"></image>
+    </view>
+    <view class="list_right">
+      <view class="tit">陕西省西安市太白南路店</view>
+      <view class="address">陕西省西安市雁塔区太白南路天地源悦熙源商铺 2.4km</view>
+    </view>
+  </view>
+</view>

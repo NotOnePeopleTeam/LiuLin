@@ -1,0 +1,309 @@
+page {
+  position: relative;
+}
+
+.header {
+  z-index: 1000;
+  color: #000;
+  margin-top: 30rpx;
+  font-weight: bold;
+}
+
+.bbb .ooo {
+  width: 375px;
+  /* height: 667px; */
+  height: 100%;
+}
+
+.bbb {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -999;
+}
+
+.container {
+  z-index: 999;
+  margin: auto;
+  /* margin-top: 150rpx; */
+}
+
+/* 转盘 */
+.canvas-container {
+  margin: 0 auto;
+  position: relative;
+  width: 600rpx;
+  height: 600rpx;
+  border-radius: 50%;
+  box-shadow: 0 4rpx 6rpx #333, 0 0 4rpx #000;
+}
+
+.canvas-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: block;
+  width: 600rpx;
+  height: 600rpx;
+  border-radius: inherit;
+  background-clip: padding-box;
+  background-color: #ffcb3f;
+}
+
+.canvas-element {
+  position: relative;
+  z-index: 1;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+}
+
+.canvas-list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  z-index: 9999;
+}
+
+.canvas-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #e4370e;
+  font-weight: bold;
+  text-shadow: 0 2rpx 2rpx rgba(255, 255, 255, 0.6);
+}
+
+.canvas-item-text {
+  position: relative;
+  display: block;
+  padding-top: 40rpx;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transform-origin: 50% 300rpx;
+  transform-origin: 50% 300rpx;
+}
+
+.canvas-item-image {
+  position: relative;
+  display: block;
+  padding-top: 40rpx;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-transform-origin: 50% 240rpx;
+  transform-origin: 50% 240rpx;
+}
+
+/* 分隔线 */
+.canvas-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  z-index: 99;
+}
+
+.canvas-litem {
+  position: absolute;
+  left: 300rpx;
+  top: 0;
+  width: 2rpx;
+  height: 300rpx;
+  background-color: rgba(228, 55, 14, 0.4);
+  overflow: hidden;
+  -webkit-transform-origin: 50% 300rpx;
+  transform-origin: 50% 300rpx;
+}
+
+/**
+* 抽奖按钮
+*/
+.canvas-btn {
+  position: absolute;
+  left: 220rpx;
+  top: 220rpx;
+  z-index: 400;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  color: #f4e9cc;
+  background-color: #e44025;
+  line-height: 160rpx;
+  text-align: center;
+  font-size: 40rpx;
+  text-shadow: 0 -2rpx 2rpx rgba(0, 0, 0, 0.6);
+  box-shadow: 0 6rpx 10rpx rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.canvas-btn::after {
+  position: absolute;
+  display: block;
+  content: ' ';
+  left: 20rpx;
+  top: -92rpx;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 60rpx;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #e44025;
+}
+
+.canvas-btn.disabled {
+  pointer-events: none;
+  background: #b07a7b;
+  color: #ccc;
+}
+
+.canvas-btn.disabled::after {
+  border-bottom-color: #b07a7b;
+}
+
+.header-subtitle {
+  font-size: 30rpx;
+  text-align: center;
+  margin-bottom: 10rpx;
+  color: #fff;
+  z-index: 999;
+}
+
+.hea {
+  font-size: 30rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+  color: #fff;
+}
+
+.priceaward {
+  margin-top: 50rpx;
+  color: #e44025;
+  font-size: 35rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+
+.awardprice {
+  padding: 30rpx 50rpx 0 50rpx;
+  text-align: center;
+  color: #e44025;
+  font-size: 32rpx;
+}
+
+.text {
+  margin-top: 10rpx;
+  text-align: left;
+  line-height: 40rpx;
+  color: #f00;
+  font-size: 30rpx;
+  font-weight: normal;
+  overflow-wrap: break-word;
+}
+
+.chou {
+  text-align: left;
+  color: #e44025;
+}
+
+.duihuan {
+  width: 596rpx;
+  height: 702rpx;
+  margin: auto;
+  border-radius: 30rpx;
+  position: absolute;
+  top: 360rpx;
+  z-index: 999;
+  left: 79rpx;
+}
+
+.title {
+  /* font-weight: bold; */
+  text-align: center;
+  margin: auto;
+  font-size: 35rpx;
+  margin-bottom: 50rpx;
+  color: red;
+}
+
+.icon-guanbi {
+  position: relative;
+  left: 135rpx;
+  top: -305rpx;
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  line-height: 50rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.sui {
+  color: #fff;
+  /* padding: 20rpx 0; */
+  width: 450rpx;
+  margin: 0 auto;
+  border-radius: 15rpx;
+  text-align: center;
+  background-color: #ee3d35;
+  margin-bottom: 50rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.sui button {
+  font-weight: 700;
+  font-size: 30rpx;
+  color: #fff;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+.centee {
+  font-size: 30rpx;
+  font-weight: 700;
+  margin-bottom: 30rpx;
+  text-align: center;
+
+}
+
+.bbbbb {
+  width: 596rpx;
+  height: 702rpx;
+}
+
+.lu {
+  width: 30%;
+  background-color: #ffb026;
+  text-align: center;
+  border-radius: 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.dddd {
+  position: absolute;
+  top: 319rpx;
+  left: 80rpx;
+  z-index: 999;
+}
+
+.masks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: -2;
+}

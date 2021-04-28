@@ -1,0 +1,39 @@
+<navbar parameter='{{parameter}}'></navbar>
+
+ <!-- <view class="section">
+  <input type='text' confirm-type='search' bindinput='input1' bindconfirm='confirm1' style='border:1px solid #999999' placeholder="请输入位置" />
+
+  <view wx:for="{{hosList}}" wx:for-item="h" wx:key="index">
+    <text wx:if="{{h.show}}">{{h.name}}</text>
+  </view>
+</view> -->
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索" maxlength='10' value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">请输入商家名称</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}"> 
+      <view class="weui-cell__bd" wx:for="{{list}}" wx:key="key"> 
+        <view class='list_name' data-index='{{index}}' data-id='{{item.id}}' data-name="{{item.name}}"  bindtap='btn'> 
+          <label class='lab_name'>{{item.name}}</label>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="map_container">
+  <map id="myMap" style="width: 100%; height: 100%;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location></map>
+</view> 

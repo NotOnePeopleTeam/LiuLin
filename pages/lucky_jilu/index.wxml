@@ -1,0 +1,23 @@
+<navbar parameter='{{parameter}}'></navbar>
+<view class='bill-details'>
+	<view class='sign-record'>
+		<view class='list' wx:for="{{jilu}}" wx:key='index'>
+			<view class='item'>
+				<view class='data'>{{item.add_time}}</view>
+				<view class='listn'>
+					<view class='itemn acea-row row-between-wrapper'>
+						<view class="list">
+							<view class='name line1 lists'>
+								<image src="{{item.avatar}}" class="tou"></image>
+								{{item.nickname}}
+							</view>
+						</view>
+						<view class='num font-color'>{{item.prize}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class='loadingicon acea-row row-center-wrapper'>
+		</view>
+	</view>
+</view>
